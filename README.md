@@ -9,3 +9,10 @@
 ![5Z1_network](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z1_network.png)<br />
 - Komendą ```docker inspect <nazwa_kontenera> | jq '.[].NetworkSettings.Networks'``` można sprawdzić, do jakich sieci przyłączony jest kontener. Np. kontener T2 przyłączony jest do podsieci bridge oraz bridge1:
 ![5Z1_przylaczone_kontenery](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z1_przylaczone_kontenery.png)<br />
+
+
+<b>Skrypt z zadania 5Z3</b>
+- Potwierdzenie poprawnego wykonania skryptu:<br />
+![5Z3_dziala](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_dziala.png)<br />
+- Komendą ```docker inspect <nazwa_kontenera> | jq '.[].NetworkSettings.Networks'``` można sprawdzić, do zadeklarowany aliasy dla kontenera. Np. kontener D2 ma zadeklarowane aliasy:
+![5Z3_aliasy](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_aliasy.png)<br />
