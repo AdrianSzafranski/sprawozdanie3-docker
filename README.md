@@ -14,7 +14,7 @@
 <b>Skrypt z zadania 5Z3</b>
 - Potwierdzenie poprawnego wykonania skryptu:<br />
 ![5Z3_dziala](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_dziala.png)<br />
-- Komendą ```docker inspect <nazwa_kontenera> | jq '.[].NetworkSettings.Networks'``` można sprawdzić zadeklarowane aliasy dla kontenera. Np. kontener D2 ma zadeklarowane aliasy:
+- Komendą ```docker inspect <nazwa_kontenera> | jq '.[].NetworkSettings.Networks'``` można sprawdzić zadeklarowane aliasy dla kontenera(wraz z informacją, do której sieci są przyłączone). Np. kontener D2 ma zadeklarowane aliasy:
 ![5Z3_aliasy](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_aliasy.png)<br />
 
 <b>Pytanie 1 z zadania 5Z3</b><br />
