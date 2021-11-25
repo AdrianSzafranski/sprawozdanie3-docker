@@ -16,3 +16,11 @@
 ![5Z3_dziala](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_dziala.png)<br />
 - Komendą ```docker inspect <nazwa_kontenera> | jq '.[].NetworkSettings.Networks'``` można sprawdzić, do zadeklarowany aliasy dla kontenera. Np. kontener D2 ma zadeklarowane aliasy:
 ![5Z3_aliasy](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_aliasy.png)<br />
+
+<b>Pytanie 1 z zadania 5Z3</b><br />
+Nie można używać aliasów do komunikacji pomiędzy kontenerami przyłączonymi do dwóch różnych sieci ale pracujących w trybie mostu definiowanego przez użytkownika, ponieważ zasięg aliasu dotyczy tylko sieci, do której został przyłączony, zasięg nie wykracza po za tą sieć.
+Aby to przestestować w praktyce, wchodzimy do kontenera S1 i instalujemy komende do pingowania:
+![5Z3_p1_przygotowanie](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_p1_przygotowanie.png)<br />
+Następnie pingujemy host1:<br />
+![5Z3_p1_ping_zly](https://github.com/AdrianSzafranski/sprawozdanie3-docker/blob/main/screens/5Z3_p1_ping_zly.png)<br />
+Pingowanie zakończyło sie niepowodzeniem.
